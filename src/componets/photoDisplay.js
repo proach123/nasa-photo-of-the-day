@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import PhotoData from './photoData';
 import TextData from './textData'
 import axios from 'axios'
+import {Card} from 'reactstrap';
 
 
 
@@ -16,13 +17,17 @@ export default function PhotoDisplay(props){
       }, []);
         console.log(dataState)
     return(
-        <div className="photo-display">
-            <div>Hello</div>
+        <div width={'500px'} height={'200px'}>
+        <Card width={"50%"} >
             <TextData key={dataState.date} date={dataState.date} explanation={dataState.explanation} title={dataState.title}/>
             <PhotoData key={dataState.media_type} img={dataState.url} explanation={dataState.explanation} />
-        </div>
+        </Card>
+    </div> 
     )
 }
+
+
+
 
 
 //const Numbers = (props) => {

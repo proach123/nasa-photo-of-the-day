@@ -1,13 +1,17 @@
 import React from 'react';
+import {
+    CardText, CardBody,
+    CardTitle, CardSubtitle
+  } from 'reactstrap';
 
 export default function textData(props){
 
     return(
-        <div>
-            <h2>{props.title}</h2>
-            <h3>{props.date}</h3>
-            <p>{props.explanation}</p>
-        </div>
+        <CardBody>
+            <CardTitle>{props.title}</CardTitle>
+            <CardSubtitle>{props.date}</CardSubtitle>
+            <CardText>{props.explanation}</CardText>
+        </CardBody>
     )
 
     

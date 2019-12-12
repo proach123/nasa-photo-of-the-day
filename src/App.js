@@ -1,11 +1,12 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import PhotoDisplay from './componets/photoDisplay';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Nasa Photo of the Day</h1>
+    <div className="text-center bg-blue">
+      <h1 class="text-xl text-gray-800 leading-tight">Nasa Photo of the Day</h1>
       <PhotoDisplay/>
     </div>
   );
